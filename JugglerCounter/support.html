@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サポート - JugglerCounter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --border: #1e1e2e;
+      --accent: #00e5ff;
+      --accent-dim: rgba(0, 229, 255, 0.10);
+      --text: #e0e0f0;
+      --text-muted: #777;
+      --heading: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,229,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 560px;
+      margin: 48px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .card-header {
+      padding: 40px 40px 32px;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .icon-wrap {
+      width: 72px;
+      height: 72px;
+      background: var(--accent-dim);
+      border: 1px solid rgba(0,229,255,0.25);
+      border-radius: 18px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-wrap svg {
+      width: 36px;
+      height: 36px;
+      fill: var(--accent);
+    }
+
+    .app-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--heading);
+    }
+
+    .card-body {
+      padding: 36px 40px;
+    }
+
+    .message {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 32px;
+      color: var(--text);
+    }
+
+    .contact-section {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 28px;
+    }
+
+    .contact-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+
+    .contact-row:last-child { border-bottom: none; }
+
+    .contact-key { color: var(--text-muted); }
+    .contact-val { color: var(--heading); font-weight: 500; }
+
+    .mail-btn {
+      display: block;
+      text-align: center;
+      background: var(--accent);
+      color: #000;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .mail-btn:hover { opacity: 0.85; }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-bottom: 32px;
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="card-header">
+    <div class="icon-wrap">
+      <!-- Simple support icon -->
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+      </svg>
+    </div>
+    <p class="app-label">Support</p>
+    <h1>JugglerCounter</h1>
+  </div>
+
+  <div class="card-body">
+    <p class="message">
+      不具合の報告やご意見・ご要望がありましたら、下記のメールアドレスまでお気軽にご連絡ください。できる限り迅速にご対応いたします。
+    </p>
+
+    <div class="contact-section">
+      <p class="contact-label">Developer Info</p>
+      <div class="contact-row">
+        <span class="contact-key">アプリ名</span>
+        <span class="contact-val">JugglerCounter</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-key">開発者</span>
+        <span class="contact-val">KOSUKE NAKAMURA</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-key">メール</span>
+        <span class="contact-val">nakamuradevelop28@gmail.com</span>
+      </div>
+    </div>
+
+    <a href="mailto:nakamuradevelop28@gmail.com" class="mail-btn">
+      メールでお問い合わせ
+    </a>
+  </div>
+</div>
+
+<footer>© 2025 KOSUKE NAKAMURA</footer>
+
+</body>
+</html>
