@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>利用規約 - JugglerCounter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --border: #1e1e2e;
+      --accent: #00e5ff;
+      --accent-dim: rgba(0, 229, 255, 0.12);
+      --text: #e0e0f0;
+      --text-muted: #888;
+      --heading: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,229,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+      padding: 48px 24px 32px;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .app-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: clamp(22px, 5vw, 32px);
+      color: var(--heading);
+      letter-spacing: 0.05em;
+    }
+
+    .date {
+      margin-top: 10px;
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .intro {
+      background: var(--accent-dim);
+      border: 1px solid rgba(0,229,255,0.2);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 48px;
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    .section-number {
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.9;
+    }
+
+    p + p {
+      margin-top: 10px;
+    }
+
+    ol {
+      padding-left: 1.4em;
+      margin-top: 10px;
+    }
+
+    ol li {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.9;
+      margin-bottom: 4px;
+    }
+
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-top: 12px;
+    }
+
+    .contact-box p { margin-bottom: 6px; }
+
+    .contact-box a {
+      color: var(--accent);
+      text-decoration: none;
+      font-family: 'Space Mono', monospace;
+      font-size: 13px;
+    }
+
+    .contact-box a:hover { text-decoration: underline; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 24px;
+      border-top: 1px solid var(--border);
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="app-label">JugglerCounter</p>
+  <h1>利用規約</h1>
+  <p class="date">施行日：2025年3月17日</p>
+</header>
+
+<main>
+  <div class="intro">
+    本利用規約（以下「本規約」）は、KOSUKE NAKAMURA（以下「開発者」）が提供するアプリ「JugglerCounter」（以下「本アプリ」）の利用条件を定めるものです。本アプリをダウンロードまたは使用した時点で、ユーザーは本規約に同意したものとみなします。
+  </div>
+
+  <section>
+    <p class="section-number">01</p>
+    <h2>総則 / 適用</h2>
+    <p>本規約は、本アプリの利用に関する開発者とユーザーとの間の一切の関係に適用されます。開発者が別途定めるプライバシーポリシーその他のガイドラインは、本規約の一部を構成します。</p>
+    <p>本アプリは、日本国内での個人利用を目的として提供されます。本規約に同意できない場合は、本アプリの利用をお控えください。</p>
+  </section>
+
+  <section>
+    <p class="section-number">02</p>
+    <h2>サービス内容</h2>
+    <p>本アプリは、スロット台（ジャグラーシリーズ等）のカウント管理・設定推測を補助するツールです。提供機能の内容は、開発者の判断により予告なく変更・追加・削除される場合があります。</p>
+    <p>一部の機能は有料プラン（サブスクリプションまたは買い切り）の契約が必要です。無料で利用できる機能の範囲は、開発者が別途定める通りとします。</p>
+  </section>
+
+  <section>
+    <p class="section-number">03</p>
+    <h2>利用条件 / 禁止事項</h2>
+    <p>ユーザーは本アプリを適法かつ本規約に従った目的のためにのみ使用できます。以下の行為を禁止します。</p>
+    <ol>
+      <li>本アプリまたはそのコンテンツの無断複製・転載・再配布</li>
+      <li>リバースエンジニアリング・逆コンパイル・逆アセンブルその他の解析行為</li>
+      <li>本アプリを用いた商業目的での利用（開発者の書面による許諾がある場合を除く）</li>
+      <li>他のユーザーまたは第三者の権利を侵害する行為</li>
+      <li>法令または公序良俗に反する行為</li>
+      <li>本アプリのサーバーや通信システムに過大な負荷をかける行為</li>
+      <li>その他、開発者が不適切と判断する行為</li>
+    </ol>
+  </section>
+
+  <section>
+    <p class="section-number">04</p>
+    <h2>料金と支払い</h2>
+    <p>本アプリは以下の有料プランを提供します。価格・内容は App Store の購入画面でご確認ください。</p>
+    <p><strong style="color:var(--heading);">サブスクリプション（自動更新）</strong><br>
+    プラン名：プレミアムプラン（月額） / 価格：月額250円<br>
+    サブスクリプションは購入確認後に課金が発生し、現在の有効期間終了の24時間前に自動的に更新されます。自動更新は、更新日の24時間以上前に App Store の「設定 → Apple ID → サブスクリプション」からいつでもオフにできます。解約後も現在の有効期間の終了日まで機能を利用できます。</p>
+    <p><strong style="color:var(--heading);">買い切り（非消費型）</strong><br>
+    プラン名：プレミアムプラン（永続） / 価格：980円<br>
+    一度購入すると、同一 Apple ID を使用する限り追加料金なしで永続的に機能を利用できます。同一 Apple ID でのデバイス間の復元は「購入を復元」機能から行えます。</p>
+    <p>価格は予告なく変更される場合があります。サブスクリプションの価格変更は、次の更新サイクルの開始前に通知され、ユーザーは変更を承認するか、プランを解約するかを選択できます。</p>
+    <p>すべての決済は Apple Inc. が提供する App Store の課金システムを通じて処理されます。開発者はクレジットカード番号その他の支払い情報を取得しません。</p>
+  </section>
+
+  <section>
+    <p class="section-number">05</p>
+    <h2>無料トライアル</h2>
+    <p>開発者が無料トライアル期間を提供する場合、トライアル期間中は有料機能を無償でご利用いただけます。トライアル期間終了前に解約しない限り、期間終了後は自動的に有料プランへ移行し、所定の料金が課金されます。</p>
+    <p>無料トライアルが現在提供されているかどうかは、App Store の購入画面でご確認ください。同一 Apple ID ごとに提供されるトライアルは1回限りとなる場合があります。</p>
+  </section>
+
+  <section>
+    <p class="section-number">06</p>
+    <h2>返品・返金</h2>
+    <p>本アプリの購入に関する返金は、Apple Inc. のポリシーに従います。返金をご希望の場合は、<a href="https://reportaproblem.apple.com/" target="_blank" rel="noopener">reportaproblem.apple.com</a> からAppleに直接お申し出ください。開発者は返金の可否を判断する立場になく、返金処理を行う権限を持ちません。</p>
+  </section>
+
+  <section>
+    <p class="section-number">07</p>
+    <h2>知的財産権</h2>
+    <p>本アプリおよびその構成要素（デザイン・文章・画像・ロジック等）に関する著作権その他一切の知的財産権は、開発者または正当な権利者に帰属します。本規約に基づくライセンスは、個人的・非商業的な利用目的に限定された非独占的・譲渡不可のライセンスであり、いかなる権利の移転も行いません。</p>
+  </section>
+
+  <section>
+    <p class="section-number">08</p>
+    <h2>免責</h2>
+    <p>本アプリは現状有姿で提供されます。開発者は、本アプリの正確性・完全性・有用性・特定目的への適合性について、明示・黙示を問わず一切保証しません。</p>
+    <p>本アプリの利用または利用不能によって生じたいかなる損害（データの損失・逸失利益・機器の損傷を含むがこれに限らない）についても、開発者は一切責任を負いません。法律上責任の排除が認められない場合であっても、開発者の責任は法令の定める最小限の範囲にとどまります。</p>
+  </section>
+
+  <section>
+    <p class="section-number">09</p>
+    <h2>利用停止・終了</h2>
+    <p>開発者は、ユーザーが本規約に違反した場合、または開発者が必要と判断した場合、予告なく本アプリへのアクセスを停止・終了する権利を有します。</p>
+    <p>また、開発者はいつでも本アプリの提供を終了できます。提供終了の際は、可能な範囲で事前に通知しますが、すでに購入済みのサブスクリプション期間中の返金については Apple のポリシーに従います。</p>
+  </section>
+
+  <section>
+    <p class="section-number">10</p>
+    <h2>規約変更</h2>
+    <p>開発者は、必要に応じて本規約を変更できます。変更後の規約はアプリ内または本ページへの掲載をもって効力を生じます。重要な変更がある場合は、アプリ内通知またはその他適切な方法でユーザーに通知します。変更後も本アプリを継続して利用した場合、変更後の規約に同意したものとみなします。</p>
+  </section>
+
+  <section>
+    <p class="section-number">11</p>
+    <h2>準拠法・裁判管轄</h2>
+    <p>本規約の解釈および適用は日本法に準拠します。本規約または本アプリに関する一切の紛争については、開発者の所在地を管轄する裁判所を第一審の専属的合意管轄裁判所とします。</p>
+  </section>
+
+  <section>
+    <p class="section-number">12</p>
+    <h2>お問い合わせ</h2>
+    <p>本規約に関するご質問・ご意見は、下記までお気軽にご連絡ください。</p>
+    <div class="contact-box">
+      <p>開発者：KOSUKE NAKAMURA</p>
+      <p>メール：<a href="mailto:nakamuradevelop28@gmail.com">nakamuradevelop28@gmail.com</a></p>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-number">13</p>
+    <h2>プライバシーポリシー</h2>
+    <p>本アプリにおける個人情報・データの取り扱いについては、別途定めるプライバシーポリシーをご参照ください。</p>
+    <div class="contact-box">
+      <p><a href="https://nakanaka117.github.io/JugglerCounter/privacy-policy.html" target="_blank" rel="noopener">https://nakanaka117.github.io/JugglerCounter/privacy-policy.html</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 KOSUKE NAKAMURA — JugglerCounter
+</footer>
+
+</body>
+</html>

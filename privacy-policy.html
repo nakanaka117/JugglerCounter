@@ -28,7 +28,6 @@
       min-height: 100vh;
     }
 
-    /* Subtle grid background */
     body::before {
       content: '';
       position: fixed;
@@ -119,6 +118,10 @@
       line-height: 1.9;
     }
 
+    p + p {
+      margin-top: 10px;
+    }
+
     .contact-box {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -138,6 +141,13 @@
 
     .contact-box a:hover { text-decoration: underline; }
 
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
     footer {
       position: relative;
       z-index: 1;
@@ -155,7 +165,7 @@
 <header>
   <p class="app-label">JugglerCounter</p>
   <h1>プライバシーポリシー</h1>
-  <p class="date">最終更新日：2025年2月</p>
+  <p class="date">最終更新日：2025年3月</p>
 </header>
 
 <main>
@@ -166,29 +176,38 @@
   <section>
     <p class="section-number">01</p>
     <h2>個人情報の収集と利用について</h2>
-    <p>本アプリは、氏名・メールアドレス・位置情報をはじめとする個人情報を一切収集しません。アプリの利用に際してアカウント登録は不要であり、ユーザーを識別するいかなる情報も取得・保存しません。</p>
+    <p>開発者は、氏名・メールアドレス・位置情報などの個人を直接識別する情報を収集しません。アプリの利用にアカウント登録は不要です。</p>
+    <p>ただし、本アプリは広告配信のために Google LLC が提供する Google Mobile Ads SDK を使用しています。同SDKは、広告のパーソナライズや効果測定を目的として、広告識別子（IDFA）・IPアドレス・デバイス情報などを収集・利用する場合があります。これらの情報の取り扱いは Google のプライバシーポリシー（<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>）に従います。</p>
   </section>
 
   <section>
     <p class="section-number">02</p>
     <h2>データの管理とセキュリティ</h2>
-    <p>アプリ内で生成されたすべてのデータ（カウント記録など）は、お使いのデバイス内にのみ保存されます。外部サーバーへのデータ送信は行っておりません。データの管理はユーザー自身の端末に委ねられており、アプリを削除することでデータも完全に消去されます。</p>
+    <p>アプリ内で生成されたすべてのデータ（カウント記録など）は、お使いのデバイス内にのみ保存されます。開発者が運営する外部サーバーへのデータ送信は行っておりません。データの管理はユーザー自身の端末に委ねられており、アプリを削除することでデータも完全に消去されます。</p>
   </section>
 
   <section>
     <p class="section-number">03</p>
-    <h2>第三者への提供</h2>
-    <p>本アプリは、広告表示・外部解析ツール（Firebase等）・アクセス解析サービスを一切使用していません。したがって、第三者へのデータ提供は行っておらず、ユーザーの行動情報が外部に渡ることはありません。</p>
+    <h2>広告および第三者サービスについて</h2>
+    <p>本アプリは Google Mobile Ads SDK を通じて広告を表示します。広告配信のため、Google をはじめとする広告パートナーが端末情報・広告識別子などを収集・利用する場合があります。外部解析ツール（Firebase 等）やアクセス解析サービスは使用していません。</p>
+    <p>Google の広告に関するプライバシー設定は、お使いのデバイスの「設定 → プライバシーとセキュリティ → 追跡」（iOS）から変更できます。</p>
   </section>
 
   <section>
     <p class="section-number">04</p>
+    <h2>課金・購入情報について</h2>
+    <p>本アプリは、月額または年額のサブスクリプションプランおよび買い切り（非消費型）購入を提供しています。すべての決済は Apple Inc. が提供する App Store の課金システムを通じて処理されます。開発者はクレジットカード番号その他の支払い情報を取得・保存しません。</p>
+    <p>購入状態（サブスクリプションの有効期限・買い切りの取得済みフラグなど）は、機能の提供に必要な範囲でアプリ内またはデバイス上に保持されることがあります。Apple の決済に関するプライバシーポリシーは <a href="https://www.apple.com/jp/legal/privacy/" target="_blank" rel="noopener">Apple プライバシーポリシー</a> をご参照ください。</p>
+  </section>
+
+  <section>
+    <p class="section-number">05</p>
     <h2>免責事項</h2>
     <p>本アプリの利用によって生じたいかなる損害についても、開発者は責任を負いません。また、本ポリシーの内容は予告なく変更される場合があります。変更後のポリシーはアプリまたは本ページ上に掲載した時点で効力を生じます。</p>
   </section>
 
   <section>
-    <p class="section-number">05</p>
+    <p class="section-number">06</p>
     <h2>お問い合わせ先</h2>
     <p>本ポリシーに関するご質問は、下記までお気軽にご連絡ください。</p>
     <div class="contact-box">
